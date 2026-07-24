@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="gallery_title_page">Our Photo Gallery | AJANTA TRUST</title>
+  <link rel="icon" type="image/png" href="../assets/logo/favicon.png">
+  <link rel="apple-touch-icon" href="../assets/logo/logo.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="theme-color" content="#7A1C31">
+  <link rel="canonical" href="https://www.ajantaschoolofdrama.org/gallery/index.html">
+  <meta name="description" content="Photo and video gallery of AJANTA SCHOOL OF DRAMA AND FILM TRUST - street plays, drama workshops, and social initiatives.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ajanta School of Drama and Film Trust">
+  <meta property="og:title" content="Our Photo Gallery | AJANTA TRUST">
+  <meta property="og:description" content="Photo and video gallery of AJANTA SCHOOL OF DRAMA AND FILM TRUST - street plays, drama workshops, and social initiatives.">
+  <meta property="og:image" content="https://www.ajantaschoolofdrama.org/assets/gallery/street-play-maqbara.jpg">
+  <meta property="og:url" content="https://www.ajantaschoolofdrama.org/gallery/index.html">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Our Photo Gallery | AJANTA TRUST">
+  <meta name="twitter:description" content="Photo and video gallery of AJANTA SCHOOL OF DRAMA AND FILM TRUST - street plays, drama workshops, and social initiatives.">
+  <meta name="twitter:image" content="https://www.ajantaschoolofdrama.org/assets/gallery/street-play-maqbara.jpg">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="i18n-container">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header Main -->
+  <header>
+    <div class="header-top">
+      <!-- Left: Logo -->
+      <div class="logo-container">
+        <a href="../index.html" class="logo-placeholder">
+          <img src="../assets/logo/logo.png" alt="AJANTA TRUST Logo" class="logo-img" width="226" height="171">
+        </a>
+      </div>
+
+      <!-- Center: NGO Name -->
+      <div class="title-container">
+        <h1 class="ngo-title" data-i18n="nav_brand">AJANTA SCHOOL OF DRAMA AND FILM TRUST</h1>
+        <div class="ngo-subtitle" data-i18n="nav_brand_sub">Aurangabad, Maharashtra</div>
+      </div>
+
+      <!-- Right: Language Dropdown Toggle -->
+      <div class="lang-container">
+        <div class="lang-selector">
+          <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="Change language">
+            🌐 <span id="langLabel">English</span> ▼
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <span class="lang-option" data-lang="en">English</span>
+            <span class="lang-option" data-lang="mr">मराठी</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu-bar">
+      <div class="nav-container">
+        <button class="mobile-nav-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-item"><a href="../index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li class="nav-item"><a href="../about.html" class="nav-link" data-i18n="nav_about">About Us</a></li>
+          <li class="nav-item"><a href="../activities.html" class="nav-link" data-i18n="nav_activities">Activities</a></li>
+          <li class="nav-item"><a href="../index.html#news" class="nav-link" data-i18n="nav_news">News</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link active" data-i18n="nav_gallery">Gallery</a></li>
+          <li class="nav-item"><a href="../committee.html" class="nav-link" data-i18n="nav_committee">Committee</a></li>
+          <li class="nav-item"><a href="../documents.html" class="nav-link" data-i18n="nav_documents">Documents</a></li>
+          <li class="nav-item"><a href="../contact.html" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+          <li class="nav-item"><a href="../donate.html" class="nav-link" data-i18n="nav_donate">Donate</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Gallery Hero -->
+  <section class="hero-section" style="padding: 4rem 2rem;">
+    <div class="hero-content">
+      <h1 data-i18n="gallery_title_page">Our Photo Gallery</h1>
+      <p data-i18n="gallery_subtitle_page">Visual glimpses of our theatrical workshops, campaigns, and social initiatives.</p>
+    </div>
+  </section>
+
+  <!-- Gallery Tab Navigation Buttons -->
+  <div class="gallery-tabs-container">
+    <button class="gallery-tab-btn active" id="tabAll" data-tab="all" data-i18n="gallery_all">All</button>
+    <button class="gallery-tab-btn" id="tabPhotos" data-tab="photos" data-i18n="gallery_photos">Photos</button>
+    <button class="gallery-tab-btn" id="tabVideos" data-tab="videos" data-i18n="gallery_videos">Videos</button>
+  </div>
+
+  <!-- Gallery Grid Content -->
+  <main class="main-content" id="main-content">
+    <!-- Photos Section -->
+    <section id="photoGallerySection" class="gallery-section">
+      <h2 data-i18n="gallery_photos" class="gallery-section-title">Photos</h2>
+      <div id="photoGallery" class="gallery-grid">
+      
+      <!-- Image 1 -->
+      <div class="gallery-item" 
+           data-title-key="news_1_title" 
+           data-date-key="news_1_date" 
+           data-location-key="news_1_location"
+           data-link="../news/tree-plantation.html">
+        <div class="gallery-img-wrapper">
+          <img class="gallery-img" src="../assets/gallery/tree-plantation-babhulgaon.jpg" alt="Tree Plantation at Babhulgaon" width="799" height="599" loading="lazy">
+        </div>
+        <div class="gallery-overlay">
+          <div class="gallery-caption">
+            <h4 data-i18n="news_1_title">"Ek Ped Maa Ke Naam" Campaign</h4>
+            <p><span data-i18n="label_date">Date:</span> <span data-i18n="news_1_date">July 5, 2021</span></p>
+            <a class="gallery-news-link" href="../news/tree-plantation.html" data-i18n="label_related_news">Read Related News</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 2 -->
+      <div class="gallery-item" 
+           data-title-key="news_2_title" 
+           data-date-key="news_2_date" 
+           data-location-key="news_2_location"
+           data-link="../news/street-play-hamkhas.html">
+        <div class="gallery-img-wrapper">
+          <img class="gallery-img" src="../assets/gallery/street-play-hamkhas-ground.jpg" alt="Street Play at Hamkhas Ground" width="1600" height="716" loading="lazy">
+        </div>
+        <div class="gallery-overlay">
+          <div class="gallery-caption">
+            <h4 data-i18n="news_2_title">Street Play at Hamkhas Ground</h4>
+            <p><span data-i18n="label_date">Date:</span> <span data-i18n="news_2_date">January 24, 2021</span></p>
+            <a class="gallery-news-link" href="../news/street-play-hamkhas.html" data-i18n="label_related_news">Read Related News</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 3 -->
+      <div class="gallery-item" 
+           data-title-key="news_3_title" 
+           data-date-key="news_3_date" 
+           data-location-key="news_3_location"
+           data-link="../news/street-play-maqbara.html">
+        <div class="gallery-img-wrapper">
+          <img class="gallery-img" src="../assets/gallery/street-play-maqbara.jpg" alt="Street Play at Bibi Ka Maqbara" width="1600" height="716" loading="lazy">
+        </div>
+        <div class="gallery-overlay">
+          <div class="gallery-caption">
+            <h4 data-i18n="news_3_title">Street Play at Bibi Ka Maqbara</h4>
+            <p><span data-i18n="label_date">Date:</span> <span data-i18n="news_3_date">January 5, 2023</span></p>
+            <a class="gallery-news-link" href="../news/street-play-maqbara.html" data-i18n="label_related_news">Read Related News</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 4 -->
+      <div class="gallery-item" 
+           data-title-key="news_4_title" 
+           data-date-key="news_4_date" 
+           data-location-key="news_4_location"
+           data-link="../news/drama-workshop-delhi.html">
+        <div class="gallery-img-wrapper">
+          <img class="gallery-img" src="../assets/gallery/drama-workshop-delhi-gate.jpg" alt="Drama Workshop near Delhi Gate" width="1017" height="668" loading="lazy">
+        </div>
+        <div class="gallery-overlay">
+          <div class="gallery-caption">
+            <h4 data-i18n="news_4_title">Drama Workshop near Delhi Gate</h4>
+            <p><span data-i18n="label_date">Date:</span> <span data-i18n="news_4_date">February 25, 2022</span></p>
+            <a class="gallery-news-link" href="../news/drama-workshop-delhi.html" data-i18n="label_related_news">Read Related News</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image 5 -->
+      <div class="gallery-item" 
+           data-title-key="news_5_title" 
+           data-date-key="news_5_date" 
+           data-location-key="news_5_location"
+           data-link="../news/drama-workshop-lalit-kala.html">
+        <div class="gallery-img-wrapper">
+          <img class="gallery-img" src="../assets/gallery/drama-workshop-lalit-kala.jpg" alt="Drama Workshop at Lalit Kala Kendra" width="1280" height="960" loading="lazy">
+        </div>
+        <div class="gallery-overlay">
+          <div class="gallery-caption">
+            <h4 data-i18n="news_5_title">Drama Workshop at Lalit Kala Kendra</h4>
+            <p><span data-i18n="label_date">Date:</span> <span data-i18n="news_5_date">November 10, 2022</span></p>
+            <a class="gallery-news-link" href="../news/drama-workshop-lalit-kala.html" data-i18n="label_related_news">Read Related News</a>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videoGallerySection" class="gallery-section">
+      <h2 data-i18n="gallery_videos" class="gallery-section-title">Videos</h2>
+      <div id="videoGallery" class="gallery-grid">
+      <!-- Video 1 -->
+      <div class="gallery-item video-item" 
+           data-video-src="../video/street-play-maqbara.mp4" 
+           data-video-fallback="https://www.w3schools.com/html/mov_bbb.mp4"
+           data-title-key="news_3_title" 
+           data-date-key="news_3_date" 
+           data-location-key="news_3_location"
+           data-link="../news/street-play-maqbara.html">
+        <div class="gallery-img-wrapper">
+          <img class="gallery-img" src="../assets/gallery/street-play-maqbara.jpg" alt="Street Play at Bibi Ka Maqbara" width="1600" height="716" loading="lazy">
+          <div class="video-play-overlay">▶</div>
+        </div>
+        <div class="gallery-overlay">
+          <div class="gallery-caption">
+            <h4 data-i18n="news_3_title">Street Play at Bibi Ka Maqbara</h4>
+            <p><span data-i18n="label_date">Date:</span> <span data-i18n="news_3_date">January 5, 2023</span></p>
+            <a class="gallery-news-link" href="../news/street-play-maqbara.html" data-i18n="label_related_news">Read Related News</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="gallery-item video-item" 
+           data-video-src="../video/street-play-hamkhas.mp4" 
+           data-video-fallback="https://www.w3schools.com/html/movie.mp4"
+           data-title-key="news_2_title" 
+           data-date-key="news_2_date" 
+           data-location-key="news_2_location"
+           data-link="../news/street-play-hamkhas.html">
+        <div class="gallery-img-wrapper">
+          <img class="gallery-img" src="../assets/gallery/street-play-hamkhas-ground.jpg" alt="Street Play at Hamkhas Ground" width="1600" height="716" loading="lazy">
+          <div class="video-play-overlay">▶</div>
+        </div>
+        <div class="gallery-overlay">
+          <div class="gallery-caption">
+            <h4 data-i18n="news_2_title">Street Play at Hamkhas Ground</h4>
+            <p><span data-i18n="label_date">Date:</span> <span data-i18n="news_2_date">January 24, 2021</span></p>
+            <a class="gallery-news-link" href="../news/street-play-hamkhas.html" data-i18n="label_related_news">Read Related News</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="gallery-item video-item" 
+           data-video-src="../video/drama-workshop-delhi.mp4" 
+           data-video-fallback="https://www.w3schools.com/html/mov_bbb.mp4"
+           data-title-key="news_4_title" 
+           data-date-key="news_4_date" 
+           data-location-key="news_4_location"
+           data-link="../news/drama-workshop-delhi.html">
+        <div class="gallery-img-wrapper">
+          <img class="gallery-img" src="../assets/gallery/drama-workshop-delhi-gate.jpg" alt="Drama Workshop near Delhi Gate" width="1017" height="668" loading="lazy">
+          <div class="video-play-overlay">▶</div>
+        </div>
+        <div class="gallery-overlay">
+          <div class="gallery-caption">
+            <h4 data-i18n="news_4_title">Drama Workshop near Delhi Gate</h4>
+            <p><span data-i18n="label_date">Date:</span> <span data-i18n="news_4_date">February 25, 2022</span></p>
+            <a class="gallery-news-link" href="../news/drama-workshop-delhi.html" data-i18n="label_related_news">Read Related News</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightboxModal" class="lightbox-modal">
+    <span id="lightboxClose" class="lightbox-close">&times;</span>
+    <button id="lightboxPrev" class="lightbox-nav-btn prev" aria-label="Previous image">&#10094;</button>
+    <div class="lightbox-media-wrapper">
+      <img id="lightboxImg" class="lightbox-content" src="" alt="Enlarged gallery preview">
+      <video id="lightboxVideo" class="lightbox-content" controls style="display: none; width: 100%; max-height: 70vh; outline: none; border-radius: var(--radius-md);"></video>
+    </div>
+    <button id="lightboxNext" class="lightbox-nav-btn next" aria-label="Next image">&#10095;</button>
+    <div class="lightbox-caption-panel">
+      <div id="lightboxTitle" class="lightbox-title"></div>
+      <div id="lightboxMeta" class="lightbox-meta"></div>
+      <a id="lightboxLink" class="lightbox-link" href="" data-i18n="label_related_news">Read Related News</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo-row">
+          <img src="../assets/logo/logo.png" alt="AJANTA TRUST Logo" class="footer-logo-img" width="226" height="171">
+          <h3 data-i18n="nav_brand" class="footer-brand-title">AJANTA SCHOOL OF DRAMA AND FILM TRUST</h3>
+        </div>
+        <p data-i18n="footer_description">Registered public trust dedicated to preserving Indian art, culture, and empowering society through education and theatrical expression.</p>
+      </div>
+      <div class="footer-links-col">
+        <h4 data-i18n="footer_links">Quick Links</h4>
+        <ul class="footer-links-list">
+          <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="../about.html" data-i18n="nav_about">About Us</a></li>
+          <li><a href="../activities.html" data-i18n="nav_activities">Activities</a></li>
+          <li><a href="../committee.html" data-i18n="nav_committee">Committee</a></li>
+          <li><a href="../documents.html" data-i18n="nav_documents">Documents</a></li>
+          <li><a href="../contact.html" data-i18n="nav_contact">Contact</a></li>
+          <li><a href="../donate.html" data-i18n="nav_donate">Donate</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact-col">
+        <h4 data-i18n="footer_contact">Contact Us</h4>
+        <ul class="footer-contact-list">
+          <li class="footer-address-muted">📍 Jaisinghpura, Near University Gate, Dr. B.A.M.U., Aurangabad, 431004</li>
+          <li>📞 <a href="tel:9579260877">9579260877</a></li>
+          <li>✉️ <a href="mailto:ajanta3535@gmail.com">ajanta3535@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-credibility-col">
+        <h4 data-i18n="footer_credibility">Verification Credentials</h4>
+        <div class="credibility-box">
+          <div class="credibility-item">
+            <div class="credibility-label" data-i18n="stat_darpan">NGO Darpan Unique ID</div>
+            <div class="credibility-val">MH/2022/0320338</div>
+          </div>
+          <div class="credibility-item credibility-item-spaced">
+            <div class="credibility-label" data-i18n="stat_csr">CSR Registration Number</div>
+            <div class="credibility-val">CSR00035501</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 AJANTA SCHOOL OF DRAMA AND FILM TRUST. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- Floating widgets -->
+  <a href="https://wa.me/919579260877" class="whatsapp-float-btn" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">💬</a>
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">↑</button>
+
+  <!-- Scripts -->
+  <script src="../js/translations.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

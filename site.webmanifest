@@ -1,0 +1,16 @@
+{
+  "name": "Ajanta School of Drama and Film Trust",
+  "short_name": "Ajanta Trust",
+  "description": "Promoting Indian art, culture, drama, music, dance and social street plays (Pathanatya).",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#FAF8F5",
+  "theme_color": "#7A1C31",
+  "icons": [
+    {
+      "src": "assets/logo/logo.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
